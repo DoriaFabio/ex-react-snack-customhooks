@@ -13,3 +13,20 @@ Creare un custom hook che restituisca la data e l'ora correnti, aggiornandosi au
 - Restituisce un oggetto con data e ora formattata.
 - Si aggiorna automaticamente ogni secondo.
 - Usa useEffect() per gestire l’aggiornamento.
+
+# Snack 3
+Creare un custom hook che sostituisca il cursore del mouse con un componente personalizzato.
+
+## Cosa deve fare?
+- Prende in input una stringa o un JSX component (es. un’emoji, un'icona, un'animazione).
+- Posiziona il componente al posto del puntatore del mouse.
+- Il componente segue i movimenti del mouse.
+
+# Snack Bonus
+Creare un custom hook che rilevi se un tasto specifico della tastiera è premuto.
+
+## Cosa deve fare?
+
+Prende in input il nome di un tasto ("Enter", "Escape", ecc.).
+Ritorna true quando il tasto è premuto e false quando viene rilasciato.
+Usa event listener su keydown e keyup.
