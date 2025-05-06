@@ -1,37 +1,15 @@
-# clono la cartella da github
+# Snack 1
+Creare un custom hook per alternare un valore booleano tra true e false.
 
-npm create vite@latest
+## Cosa deve fare?
+- Inizialmente false.
+- Ritorna il valore attuale e una funzione toggle() per cambiarlo.
+- Quando toggle() viene chiamato, il valore passa da true → false e viceversa.
 
-alla domanda project-name inserisco . (dot)
+# Snack 2
+Creare un custom hook che restituisca la data e l'ora correnti, aggiornandosi automaticamente ogni secondo.
 
-npm install
-
-# testo
-npm run dev
-
-apro il .gitignore e aggiungo package-lock.json
-
-installo gli altri pacchetti che mi servono
-
-cancello il contenuto di App.jsx e rimuovo gli import che non mi servono
-cancello i file che non mi servono
-
-se voglio importo bootstrap in main.jsx prima del mio css custom 
- import "bootstrap/dist/css/bootstrap.min.css";
-
-comincio ad editare App.jsx
-
-
-# add to rules in eslint
-rules: {
-      ...js.configs.recommended.rules,
-      ...react.configs.recommended.rules,
-      ...react.configs["jsx-runtime"].rules,
-      ..reactHooks.configs.recommended.rules,
-      "react/prop-types": 0, 👈
-      "react/jsx-no-target-blank": "off",
-      "react-refresh/only-export-components": [
-        "warn",
-        { allowConstantExport: true },
-      ],
-    },
+## Cosa deve fare?
+- Restituisce un oggetto con data e ora formattata.
+- Si aggiorna automaticamente ogni secondo.
+- Usa useEffect() per gestire l’aggiornamento.
